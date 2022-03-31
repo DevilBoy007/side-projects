@@ -41,7 +41,7 @@ The following schema was used to create a sqlite database for our app to use:
 
 	CREATE TABLE login(PRIMARY KEY email varchar(64) NOT NULL, password varchar(64) NOT NULL);
 
-To create a databse in your local directory, enter:
+To create a database in your local directory, enter:
 
 	sqlite3
 
