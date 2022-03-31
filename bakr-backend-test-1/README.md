@@ -64,6 +64,8 @@ is proper string format.
 	when submitting data using cURL, we base64 encrypt the parameters
 see the examples below for /login and /register endpoints. do this to see 
 server properly decode and store strings in database
+
+Our server also assumes that, in order for the request to have submitted by the browser, a script (the same one that would encrypt the form data) has sanitized the data for correctness and non-emptyness.
 ****************************************************************************************
 ### TESTING: ###
 ### 1. DOCKER BUILD ###
