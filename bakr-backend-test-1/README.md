@@ -110,11 +110,11 @@ if you run this command a second time you will receive response from server that
 ***************
 ### /login ###
 	
-	curl -d "email=$(echo -n 'user@example.com' | base64)&password=$(echo -n '54321' | base64) http://localhost:3000/login	
+	curl -d "email=$(echo -n 'user@example.com' | base64)&password=$(echo -n '54321' | base64)" http://localhost:3000/login	
 
 --- server response will be 'Invalid login combination' due to erroneous password ---
 
-	curl -d "email=$(echo -n 'noUser@example.com' | base64)&password=$(echo -n '12345' | base64) http://localhost:3000/login
+	curl -d "email=$(echo -n 'noUser@example.com' | base64)&password=$(echo -n '12345' | base64)" http://localhost:3000/login
 
 --- server response will be 'User does not exist' due to no matching email in database ---
 
