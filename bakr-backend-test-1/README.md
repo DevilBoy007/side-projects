@@ -109,10 +109,6 @@ if you run this command a second time you will receive response from server that
 
 ***************
 ### /login ###
-
-	curl -d "email=$(echo -n 'user@example.com' | base64)&password=$(echo -n '12345' | base64)" http://localhost:3000/login
-
---- server response will redirect to index page ---
 	
 	curl -d "email=$(echo -n 'user@example.com' | base64)&password=$(echo -n '54321' | base64) http://localhost:3000/login	
 
@@ -122,7 +118,12 @@ if you run this command a second time you will receive response from server that
 
 --- server response will be 'User does not exist' due to no matching email in database ---
 
-if user exists, server will add user's email to session and
+
+	curl -d "email=$(echo -n 'user@example.com' | base64)&password=$(echo -n '12345' | base64)" http://localhost:3000/login
+
+--- server response will redirect to index page ---
+
+if user exists, server will add user's email to the server's session object and
 redirect user to index page
 
 *********
