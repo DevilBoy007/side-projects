@@ -1,10 +1,10 @@
-DESIGN:
+<DESIGN>
 	initially i was tempted to go with Express.js for the server, but eventually
 settled with Flask due to the project's relatively simple requirements. Flask is not
 a viable option for production products, but takes much less time to get working properly.
 Since this is just an evaluation, i figured it was more important to emphasize my 
 understanding of the process and less about technical, production level correctness. 
-
+</DESIGN>
 ASSUMPTIONS:
 
 Flask assumes this file tree architecture:
