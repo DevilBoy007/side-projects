@@ -8,16 +8,19 @@ understanding of the process and less about technical, production level correctn
 ASSUMPTIONS:
 
 Flask assumes this file tree architecture:
+```
 	/project
 	 |
 	  - app.py
 	  - templates
 	  - static
+```
 where templates contain .html pages and static contains their respective stylesheets 
 and resources
 
 Modifying this architecture for our test, the structure should look like this:
-backend-dev-test
+```
+/backend-dev-test
   |
   |- Dockerfile
   |- docker-compose.yml
@@ -32,7 +35,7 @@ backend-dev-test
   |- users.db
   |- requirements.txt
   |_ README.md
-
+```
 DATABASE:
  the following schema was used to create a sqlite database for our app to use:
 
