@@ -11,9 +11,9 @@ Flask assumes this file tree architecture:
 ```
 	/project
 	 |
-	  - app.py
-	  - templates
-	  - static
+	 |- app.py
+	 |- templates
+	 |- static
 ```
 where templates contain .html pages and static contains their respective stylesheets 
 and resources
