@@ -39,7 +39,7 @@ Modifying this architecture for our test, the structure should look like this:
 DATABASE:
  the following schema was used to create a sqlite database for our app to use:
 
-	CREATE TABLE login(email varchar(64), password varchar(64));
+	CREATE TABLE login(PRIMARY KEY email varchar(64) NOT NULL, password varchar(64) NOT NULL);
 
 to create a databse in your local directory, enter:
 	sqlite3
@@ -51,8 +51,8 @@ the above command, and then save the database with the save command:
 and you should be good to go!
 ************************
 
-	the biggest assumption that the API makes is that the incoming data will be base64
-encoded. it makes this assumption to show decode functionality. in a real web 
+	the biggest assumption that the API makes is that the incoming data will be base64 encoded. 
+it makes this assumption to show decode functionality. in a real web 
 request, the incoming parameters of the request would most likely be a JWT and should
 be processed as such. 
 	when submitting the data through a browser, since i didn't build out any web
