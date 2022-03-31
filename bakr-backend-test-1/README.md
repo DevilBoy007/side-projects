@@ -65,8 +65,9 @@ is proper string format.
 see the examples below for /login and /register endpoints. do this to see 
 server properly decode and store strings in database
 ****************************************************************************************
-TESTING:
-1. copy/paste the following command to build and start the app in your docker
+### TESTING: ###
+### 1. DOCKER BUILD ###
+copy/paste the following command to build and start the app in your docker
    environment:
 
 	`docker-compose up`
@@ -86,7 +87,7 @@ To get around this you can visit http://localhost:3000 and its associated endpoi
 in a browser and your session will stay alive, allowing you to visualize the complete
 setup
 
-2. ### Verify the server responds ### 
+### 2. Verify the server responds ### 
  - copy/paste the following command into your terminal
 
 	curl localhost:3000
@@ -94,7 +95,7 @@ setup
 you should get this response 
 `You are not logged in`
 
-3. #### cURL request endpoint tests ###
+#### 3. cURL request endpoint tests ###
 
 *********
 ### /register ###
