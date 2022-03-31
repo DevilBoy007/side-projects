@@ -1,11 +1,11 @@
-DESIGN:
+### DESIGN: ###
 initially i was tempted to go with Express.js for the server, but eventually
 settled with Flask due to the project's relatively simple requirements. Flask is not
 a viable option for production products, but takes much less time to get working properly.
 Since this is just an evaluation, i figured it was more important to emphasize my 
 understanding of the process and less about technical, production level correctness.
 ****************************************************************************************
-ASSUMPTIONS:
+### ASSUMPTIONS: ###
 Flask assumes this file tree architecture:
 ```
 	/project
@@ -35,8 +35,9 @@ Modifying this architecture for our test, the structure should look like this:
   |- requirements.txt
   |_ README.md
 ```
-DATABASE:
-the following schema was used to create a sqlite database for our app to use:
+### DATABASE: ###
+
+The following schema was used to create a sqlite database for our app to use:
 
 	CREATE TABLE login(PRIMARY KEY email varchar(64) NOT NULL, password varchar(64) NOT NULL);
 
