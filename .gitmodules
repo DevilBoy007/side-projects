@@ -1,0 +1,3 @@
+[submodule "MealTool"]
+	path = MealTool
+	url = ./
